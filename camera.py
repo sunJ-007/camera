@@ -1,6 +1,7 @@
 import streamlit as sl
 from PIL import Image
 
+sl.subheader("Color to Grayscale Converter")
 uploaded_image = sl.file_uploader("Upload Image")
 if uploaded_image:
     img = Image.open(uploaded_image)
